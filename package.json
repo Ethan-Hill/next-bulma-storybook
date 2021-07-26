@@ -1,0 +1,33 @@
+{
+  "name": "next-bulma-storybook",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "css": "node-sass src/style.scss -o dist",
+    "css:watch": "node-sass styles/scss -wo styles/css"
+  },
+  "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "bulma": "^0.9.3",
+    "next": "11.0.1",
+    "node-sass": "4.14.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@storybook/addon-actions": "^6.3.6",
+    "@storybook/addon-essentials": "^6.3.6",
+    "@storybook/addon-links": "^6.3.6",
+    "@storybook/react": "^6.3.6",
+    "babel-loader": "^8.2.2",
+    "eslint": "7.31.0",
+    "eslint-config-next": "11.0.1"
+  }
+}
