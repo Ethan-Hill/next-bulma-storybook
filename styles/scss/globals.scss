@@ -1,3 +1,12 @@
 @import './0-settings/_settings.scss';
 @import './1-components/_components.scss';
-@import './2-layout/_layouts.scss'
+@import './2-layout/_layouts.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+body {
+	font-family: 'Open Sans';
+	background: #ece6d9;
+	height: 100vh;
+	text-align: center;
+}

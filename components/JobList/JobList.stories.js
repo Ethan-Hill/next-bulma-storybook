@@ -1,8 +1,20 @@
-// import { Button } from "../components/Button/index";
-import { JobList } from "../components/JobList/index";
+/* eslint-disable import/no-anonymous-default-export */
 
-export default function Home() {
-  const Jobs = [
+import React from "react";
+
+import { JobList } from "./index";
+
+export default {
+  component: JobList,
+  title: "Components/JobList",
+};
+
+const Template = (args) => <JobList {...args}>Button</JobList>;
+
+export const Default = Template.bind({});
+
+Default.args = {
+  Jobs: [
     { title: "farm worker", location: "lon lon ranch", salary: 30000, id: "1" },
     { title: "quarryman", location: "death mountain", salary: 40000, id: "2" },
     {
@@ -18,10 +30,5 @@ export default function Home() {
       salary: 32000,
       id: "5",
     },
-  ];
-  return (
-    <div>
-      <JobList Jobs={Jobs} />
-    </div>
-  );
-}
+  ],
+};
